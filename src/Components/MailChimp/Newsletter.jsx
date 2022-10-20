@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React, { useEffect } from "react";
 import { Alert, Col, Row } from "react-bootstrap";
 import "./Newsletter.css";
@@ -33,17 +34,37 @@ function Newsletter({ onValidated, status, message }) {
           </Col>
           <Col md={6} xl={7}>
             <form onSubmit={handleSubmit}>
-              <div className="newsletter__emailBox">
-                <input
-                  type="email"
-                  name="EMAIL"
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email"
-                  value={email}
-                  required
-                />
-                <button type="submit">Subscribe</button>
-              </div>
+              {innerWidth > 768 ? (
+                <div className="newsletter__emailBox">
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your email"
+                    value={email}
+                    required
+                  />
+                  <button type="submit">Subscribe</button>
+                </div>
+              ) : (
+                <div className="newsletter__emailBox">
+                  <Row>
+                    <Col>
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Your email"
+                        value={email}
+                        required
+                      />
+                    </Col>
+                    <Col>
+                      <button type="submit">Subscribe</button>
+                    </Col>
+                  </Row>
+                </div>
+              )}
             </form>
           </Col>
         </Row>

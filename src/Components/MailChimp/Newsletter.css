@@ -64,3 +64,44 @@
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  .newsletter__box {
+    padding: 85px 25px;
+  }
+
+  .newsletter__emailBox {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .newsletter__emailBox input {
+    margin-bottom: 15px;
+  }
+
+  .newsletter__emailBox button {
+    padding: 20px 25px;
+  }
+
+  .newsletter__box h3 {
+    font-size: 1.5em;
+  }
+
+  .newsletter__box p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+
+  .newsletter__box p span {
+    display: block;
+  }
+
+  .newsletter__box p span:first-child {
+    margin-bottom: 10px;
+  }
+
+  .newsletter__box p span:last-child {
+    font-size: 0.8em;
+  }
+
+}

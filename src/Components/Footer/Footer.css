@@ -61,3 +61,13 @@
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 991px) {
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer img {
+    width: 40%;
+  }
+}

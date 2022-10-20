@@ -5,7 +5,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import Logo from "../../assets/img/logo.png";
 import Linkedin from "../../assets/img/nav-icon1.svg";
 import Facebook from "../../assets/img/nav-icon2.svg";
-import GitHub from "../../assets/img/nav-icon3.png";
+import GitHub from "../../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 

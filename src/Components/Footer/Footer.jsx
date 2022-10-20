@@ -7,7 +7,7 @@ import "./Footer.css";
 import Logo from "../../assets/img/logo.png";
 import Linkedin from "../../assets/img/nav-icon1.svg";
 import Facebook from "../../assets/img/nav-icon2.svg";
-import GitHub from "../../assets/img/nav-icon3.png";
+import GitHub from "../../assets/img/nav-icon3.svg";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -20,7 +20,7 @@ function Footer() {
           <Col>
             <MailChimpForm />
             <Col sm={6}>
-              <img src={Logo} alt="Logo" />
+              <img className="footer__logo" src={Logo} alt="Logo" />
             </Col>
 
             <Col className="text-center text-sm-end" sm={6}>
